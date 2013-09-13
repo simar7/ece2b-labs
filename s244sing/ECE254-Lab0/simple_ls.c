@@ -115,7 +115,13 @@ int main( int argc, char* argv[] )
 	timeptr = ctime(&statuschangetime);
 	printf("Last Status Change time: %s\n", timeptr);
 	
-	
+
+    printf("Sizes:\n");
+    printf("------\n");
+
+    off_t filesize = buf.st_size;
+    printf("Size (bytes): %llu bytes\n", filesize);
+
 	printf("Ownerships:\n");
 	printf("-----------\n");
 
