@@ -44,7 +44,7 @@ int main( int argc, char* argv[] )
 		{
 			printf("%s\n", str_path);
 		}
-	}
+	
 
 	printf("File permissions:\n");
 	printf("----------------\n"); 
@@ -52,97 +52,86 @@ int main( int argc, char* argv[] )
 	char str[] = "---";
 	struct stat buf;
 
-	for( file = 1; file < argc; file++ )
-	{
-		printf("Owner permission of %s: ", argv[file]);
-		if( lstat(argv[file], &buf) < 0)
-		{
-			perror("lstat failed\n");
-			continue;
-		}
-		
-		mode_t mode = buf.st_mode;
-		
-		str[0] = (mode & S_IRUSR) ? 'r' : '-';
-		str[1] = (mode & S_IWUSR) ? 'w' : '-';
-		str[2] = (mode & S_IWUSR) ? 'x' : '-';
-
-		printf("%s\n", str);
+    printf("Owner permission of %s: ", str_path);
+    if( lstat(str_path, &buf) < 0)
+	{	
+        perror("lstat failed\n");
+		continue;
 	}	
+    
+    mode_t mode = buf.st_mode;
+		
+	str[0] = (mode & S_IRUSR) ? 'r' : '-';
+    str[1] = (mode & S_IWUSR) ? 'w' : '-';
+	str[2] = (mode & S_IWUSR) ? 'x' : '-';
+
+	printf("%s\n", str);
 
 	printf("File type:\n");
 	printf("---------\n");
 
 	char *ptr;
 
-	for (file = 1; file < argc; file++ )
+	printf("%s: ", str_path);
+	if (lstat(str_path, &buf) < 0)
 	{
-		printf("%s: ", argv[file]);
-		if (lstat(argv[file], &buf) < 0)
-		{
-			perror("lstat failed");
-			continue;
-		}
-
-		if( S_ISREG(buf.st_mode)) 	ptr = "regular file";
-		else if (S_ISDIR(buf.st_mode))  ptr = "directory";
-		else if (S_ISCHR(buf.st_mode))  ptr = "character special";
-		else if (S_ISBLK(buf.st_mode))  ptr = "block special";
-		else if (S_ISFIFO(buf.st_mode)) ptr = "fifo";
+		perror("lstat failed");
+		continue;
+	}
+		
+    if( S_ISREG(buf.st_mode)) 	ptr = "regular file";
+	else if (S_ISDIR(buf.st_mode))  ptr = "directory";
+	else if (S_ISCHR(buf.st_mode))  ptr = "character special";
+	else if (S_ISBLK(buf.st_mode))  ptr = "block special";
+	else if (S_ISFIFO(buf.st_mode)) ptr = "fifo";
 #ifdef S_ISLNK
-		else if (S_ISLNK(buf.st_mode))  ptr = "symbolic link";
+	else if (S_ISLNK(buf.st_mode))  ptr = "symbolic link";
 #endif
 #ifdef S_ISSOCK
-		else if (S_ISSOCK(buf.st_mode)) ptr = "socket";
+	else if (S_ISSOCK(buf.st_mode)) ptr = "socket";
 #endif
-		else				ptr = "unknown file bro :(";
-		
-		printf("%s\n", ptr);
-	}
-
-
+	else				ptr = "unknown file bro :(";
+	
+	printf("%s\n", ptr);
+	
 	printf("Various Times:\n");
 	printf("-------------\n");
 
-	for( file = 1; file < argc; file++ )
+	if (lstat(str_path, &buf) < 0)
 	{
-		if (lstat(argv[file], &buf) < 0)
-		{
-			perror("lstat failed");
-			continue;
-		}
-		
-		time_t accesstime = buf.st_atime;
-		char* timeptr = ctime(&accesstime);
-		printf("Last Access time: %s\n", timeptr);
-
-		time_t modifytime = buf.st_mtime;
-		timeptr = ctime(&modifytime);
-		printf("Last Modify time: %s\n", timeptr);
-		
-		time_t statuschangetime = buf.st_ctime;
-		timeptr = ctime(&statuschangetime);
-		printf("Last Status Change time: %s\n", timeptr);
+		perror("lstat failed");
+		continue;
 	}
+	
+	time_t accesstime = buf.st_atime;
+	char* timeptr = ctime(&accesstime);
+	printf("Last Access time: %s\n", timeptr);
+
+    time_t modifytime = buf.st_mtime;
+	timeptr = ctime(&modifytime);
+	printf("Last Modify time: %s\n", timeptr);
+		
+	time_t statuschangetime = buf.st_ctime;
+	timeptr = ctime(&statuschangetime);
+	printf("Last Status Change time: %s\n", timeptr);
+	
 	
 	printf("Ownerships:\n");
 	printf("-----------\n");
 
-	for( file = 1; file < argc; file++ )
-	{
-		if (lstat(argv[file], &buf ) < 0 )
-		{ 	
-			perror("stat() failed");
-			continue;
-		}
-
-		struct group* groupname_t;
-		struct passwd* username_t;
-
-		uid_t grpid = buf.st_uid;
-		printf("group: %d\n", grpid);
-				
+	if (lstat(str_path, &buf ) < 0 )
+	{ 	
+		perror("stat() failed");
+		continue;
 	}
 
-	return 0;
+	gid_t grpid = buf.st_gid;
+    uid_t usrid = buf.st_uid;
+
+    printf("group: %d\n", grpid);
+	printf("user:  %d\n", usrid);
+
+    }
+    
+    return 0;
 }
