@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <time.h>	// For ctime()
 #include <grp.h>	// For getgrgid()
+#include <errno.h>
 
 #define STRLEN1 128
 #define STRLEN2 64
@@ -129,7 +130,7 @@ int main( int argc, char* argv[] )
 
 	for( file = 1; file < argc; file++ )
 	{
-		if (stat(argv[file], &buf ) < 0 )
+		if (lstat(argv[file], &buf ) < 0 )
 		{ 	
 			perror("stat() failed");
 			continue;
@@ -139,7 +140,12 @@ int main( int argc, char* argv[] )
 		struct passwd* username_t;
 
 		uid_t grpid = buf.st_uid;
-		groupname_t = getgrgid(grpid);
+		if( getgrgid(grpid) == 0 )
+		{
+			perror("getgrgid() failed!\n");
+			printf("ERRNO = %d\n", errno);
+		}	
+		// groupname_t = getgrgid(grpid);
 		printf("group: %s\n", groupname_t->gr_name);
 				
 	}
