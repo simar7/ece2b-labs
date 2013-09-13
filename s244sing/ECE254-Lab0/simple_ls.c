@@ -140,13 +140,7 @@ int main( int argc, char* argv[] )
 		struct passwd* username_t;
 
 		uid_t grpid = buf.st_uid;
-		if( getgrgid(grpid) == 0 )
-		{
-			perror("getgrgid() failed!\n");
-			printf("ERRNO = %d\n", errno);
-		}	
-		// groupname_t = getgrgid(grpid);
-		printf("group: %s\n", groupname_t->gr_name);
+		printf("group: %d\n", grpid);
 				
 	}
 
