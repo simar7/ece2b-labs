@@ -28,8 +28,7 @@ int filepermissions(char* str_path)
 
 	printf("%s\n", str);
 
-	printf("File type:\n");
-	printf("---------\n");
+	printf("File type: ");
 
 	char *ptr;
 
@@ -83,20 +82,18 @@ int main( int argc, char* argv[] )
 	{
 		char *str_path = p_dirent->d_name;
 
-		if ( str_path == NULL )
+		if ( str_path == NULL )	
 		{
-			printf("Null pointer found!\n");
+		printf("Null pointer found!\n");
 			exit(2);
 		}
 		else
-		{
-			printf("%s\n", str_path);
-		}
+//			printf("%s\n", str_path);
 
 
-    int result = 0;
+    if( filepermissions(str_path) != 0 )	
+		printf("Something went wrong! Errno: %d\n", errno);
 
-    result = filenames(str_path);
 /*
 	printf("Various Times:\n");
 	printf("-------------\n");
