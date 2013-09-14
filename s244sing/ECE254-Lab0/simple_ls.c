@@ -8,56 +8,17 @@
 #include <grp.h>	// For getgrgid()
 #include <errno.h>
 
-#define STRLEN1 128
-#define STRLEN2 64
-
-int main( int argc, char* argv[] )
+int filepermissions(char* str_path)
 {
-	DIR *p_dir;
-	struct dirent *p_dirent;
-
-	if( argc < 2 )
-	{
-		printf("Usage: %s <dir name>\n", argv[0]);
-		exit(1);
-	}
-
-	if( (p_dir = opendir(argv[1])) == NULL )
-	{
-		printf("opendir(%s) failed\n", argv[1]);
-		exit(1);
-	}
-
-	printf("Files currently in this directory:\n");
-	printf("----------------------------------\n");
-
-	while( (p_dirent = readdir(p_dir)) != NULL )
-	{
-		char *str_path = p_dirent->d_name;
-
-		if ( str_path == NULL )
-		{
-			printf("Null pointer found!\n");
-			exit(2);
-		}
-		else
-		{
-			printf("%s\n", str_path);
-		}
-	
-
-	printf("File permissions:\n");
-	printf("----------------\n"); 
 	int file;
 	char str[] = "---";
 	struct stat buf;
 
-    printf("Owner permission of %s: ", str_path);
     if( lstat(str_path, &buf) < 0)
 	{	
-        perror("lstat failed\n");
-		continue;
-	}	
+        perror("lstat failed on file\n");
+        return errno;
+    }	
     
     mode_t mode = buf.st_mode;
 		
@@ -76,8 +37,8 @@ int main( int argc, char* argv[] )
 	if (lstat(str_path, &buf) < 0)
 	{
 		perror("lstat failed");
-		continue;
-	}
+	    return errno;
+    }
 		
     if( S_ISREG(buf.st_mode)) 	ptr = "regular file";
 	else if (S_ISDIR(buf.st_mode))  ptr = "directory";
@@ -93,7 +54,50 @@ int main( int argc, char* argv[] )
 	else				ptr = "unknown file bro :(";
 	
 	printf("%s\n", ptr);
-	
+
+    return 0;
+}
+
+int main( int argc, char* argv[] )
+{
+	DIR *p_dir;
+	struct dirent *p_dirent;
+
+	if( argc < 2 )
+	{
+		printf("Usage: %s <dir name>\n", argv[0]);
+		exit(1);
+	}
+
+	if( (p_dir = opendir(argv[1])) == NULL )
+	{
+		printf("opendir(%s) failed\n", argv[1]);
+		exit(1);
+	}
+
+
+	printf("Files currently in this directory:\n");
+	printf("----------------------------------\n");
+
+	while( (p_dirent = readdir(p_dir)) != NULL )
+	{
+		char *str_path = p_dirent->d_name;
+
+		if ( str_path == NULL )
+		{
+			printf("Null pointer found!\n");
+			exit(2);
+		}
+		else
+		{
+			printf("%s\n", str_path);
+		}
+
+
+    int result = 0;
+
+    result = filenames(str_path);
+/*
 	printf("Various Times:\n");
 	printf("-------------\n");
 
@@ -138,6 +142,7 @@ int main( int argc, char* argv[] )
 	printf("user:  %d\n", usrid);
 
     }
-    
+*/    
+    }
     return 0;
 }
