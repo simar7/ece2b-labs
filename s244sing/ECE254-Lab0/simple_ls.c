@@ -63,15 +63,16 @@ int filetimes(char* str_path)
 	
 	time_t accesstime = buf.st_atime;
 	char* timeptr = ctime(&accesstime);
-	printf("AT: %s", timeptr);
+	
+    printf("Access Time: %s", timeptr);
 
     time_t modifytime = buf.st_mtime;
 	timeptr = ctime(&modifytime);
-	printf("MT: %s", timeptr);
+	printf("Modify Time: %s", timeptr);
 		
 	time_t statuschangetime = buf.st_ctime;
 	timeptr = ctime(&statuschangetime);
-	printf("TT: %s", timeptr);
+	printf("Status Time: %s", timeptr);
 
     return 0;
 }
@@ -115,11 +116,14 @@ int main( int argc, char* argv[] )
 	DIR *p_dir;
 	struct dirent *p_dirent;
 
-	if( argc < 2 )
-	{
-		printf("Usage: %s <dir name>\n", argv[0]);
-		exit(1);
-	}
+    if( (argc < 2) || ( strcmp( argv[1], "-h") == 0 )  || (argc > 3) )
+    {
+        printf("Usage: %s <dir name>\n", argv[0]);
+        printf("-h \t Show help\n");
+        printf("-vvv \t Be Very Verbose (default)\n");
+        printf("-P \t Be Precise\n");
+        exit(1);
+    }
 
 	if( (p_dir = opendir(argv[1])) == NULL )
 	{
@@ -147,8 +151,13 @@ int main( int argc, char* argv[] )
     if( filesizes(str_path) != 0 )
         printf("Something went wrong! Errno: %d\n", errno);
 
-    if( filetimes(str_path) != 0 )
-        printf("[filetimes]: Something went wrong! Errno: %d\n", errno);
+    if( ! ((argv[2]) && strcmp(argv[2],  "-p")) )
+        if( filetimes(str_path) != 0 )
+            printf("[filetimes]: Something went wrong! Errno: %d\n", errno);
+    
     }
+    
+    closedir(p_dir);
+
     return 0;
 }
