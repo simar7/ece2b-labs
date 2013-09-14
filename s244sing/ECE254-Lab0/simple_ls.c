@@ -10,8 +10,7 @@
 
 int filepermissions(char* str_path)
 {
-	int file;
-	char str[] = "---";
+	char str[] = "---------";
 	struct stat buf;
 
     if( lstat(str_path, &buf) < 0)
@@ -21,24 +20,19 @@ int filepermissions(char* str_path)
     }	
     
     mode_t mode = buf.st_mode;
-		
 	str[0] = (mode & S_IRUSR) ? 'r' : '-';
     str[1] = (mode & S_IWUSR) ? 'w' : '-';
-	str[2] = (mode & S_IWUSR) ? 'x' : '-';
+	str[2] = (mode & S_IXUSR) ? 'x' : '-';
+	str[3] = (mode & S_IRUSR) ? 'r' : '-';
+    str[4] = (mode & S_IWGRP) ? 'w' : '-';
+	str[5] = (mode & S_IXGRP) ? 'x' : '-';
+	str[6] = (mode & S_IROTH) ? 'r' : '-';
+    str[7] = (mode & S_IWOTH) ? 'w' : '-';
+	str[8] = (mode & S_IXOTH) ? 'x' : '-';
 
-	printf("%s\n", str);
+	printf("%s\t", str);
 
-	printf("File type: ");
-
-	char *ptr;
-
-	printf("%s: ", str_path);
-	if (lstat(str_path, &buf) < 0)
-	{
-		perror("lstat failed");
-	    return errno;
-    }
-		
+	char* ptr;
     if( S_ISREG(buf.st_mode)) 	ptr = "regular file";
 	else if (S_ISDIR(buf.st_mode))  ptr = "directory";
 	else if (S_ISCHR(buf.st_mode))  ptr = "character special";
@@ -50,9 +44,68 @@ int filepermissions(char* str_path)
 #ifdef S_ISSOCK
 	else if (S_ISSOCK(buf.st_mode)) ptr = "socket";
 #endif
-	else				ptr = "unknown file bro :(";
+	else    
+        ptr = "unknown file bro :(";
 	
-	printf("%s\n", ptr);
+	printf("%s\t", ptr);
+    return 0;
+}
+
+int filetimes(char* str_path)
+{
+
+    struct stat buf;
+	if (lstat(str_path, &buf) < 0)
+	{
+		perror("lstat failed");
+	    return errno;
+    }
+	
+	time_t accesstime = buf.st_atime;
+	char* timeptr = ctime(&accesstime);
+	printf("AT: %s", timeptr);
+
+    time_t modifytime = buf.st_mtime;
+	timeptr = ctime(&modifytime);
+	printf("MT: %s", timeptr);
+		
+	time_t statuschangetime = buf.st_ctime;
+	timeptr = ctime(&statuschangetime);
+	printf("TT: %s", timeptr);
+
+    return 0;
+}
+
+int filesizes(char* str_path)
+{
+    struct stat buf;
+    if (lstat(str_path, &buf) < 0)
+    {
+        perror("stat() failed");
+        return errno;
+    }
+
+    off_t filesize = buf.st_size;
+    printf("%5llub\t", filesize);
+    printf("%s\n", str_path);
+
+    return 0;
+}
+
+int fileownership(char* str_path)
+{
+	struct stat buf;
+    if (lstat(str_path, &buf ) < 0 )
+	{ 	
+		perror("stat() failed");
+		return -1;
+	}
+
+	gid_t grpid = buf.st_gid;
+    uid_t usrid = buf.st_uid;
+
+    printf("%5d\t", grpid);
+    printf("%5d\t", usrid);
 
     return 0;
 }
@@ -74,72 +127,28 @@ int main( int argc, char* argv[] )
 		exit(1);
 	}
 
-
-	printf("Files currently in this directory:\n");
-	printf("----------------------------------\n");
-
 	while( (p_dirent = readdir(p_dir)) != NULL )
 	{
 		char *str_path = p_dirent->d_name;
 
 		if ( str_path == NULL )	
 		{
-		printf("Null pointer found!\n");
+    		printf("Null pointer found!\n");
 			exit(2);
 		}
-		else
-//			printf("%s\n", str_path);
 
 
     if( filepermissions(str_path) != 0 )	
 		printf("Something went wrong! Errno: %d\n", errno);
 
-/*
-	printf("Various Times:\n");
-	printf("-------------\n");
+    if( fileownership(str_path) != 0 )
+        printf("Something went wrong! Errno: %d\n", errno);
 
-	if (lstat(str_path, &buf) < 0)
-	{
-		perror("lstat failed");
-		continue;
-	}
-	
-	time_t accesstime = buf.st_atime;
-	char* timeptr = ctime(&accesstime);
-	printf("Last Access time: %s\n", timeptr);
+    if( filesizes(str_path) != 0 )
+        printf("Something went wrong! Errno: %d\n", errno);
 
-    time_t modifytime = buf.st_mtime;
-	timeptr = ctime(&modifytime);
-	printf("Last Modify time: %s\n", timeptr);
-		
-	time_t statuschangetime = buf.st_ctime;
-	timeptr = ctime(&statuschangetime);
-	printf("Last Status Change time: %s\n", timeptr);
-	
-
-    printf("Sizes:\n");
-    printf("------\n");
-
-    off_t filesize = buf.st_size;
-    printf("Size (bytes): %llu bytes\n", filesize);
-
-	printf("Ownerships:\n");
-	printf("-----------\n");
-
-	if (lstat(str_path, &buf ) < 0 )
-	{ 	
-		perror("stat() failed");
-		continue;
-	}
-
-	gid_t grpid = buf.st_gid;
-    uid_t usrid = buf.st_uid;
-
-    printf("group: %d\n", grpid);
-	printf("user:  %d\n", usrid);
-
-    }
-*/    
+    if( filetimes(str_path) != 0 )
+        printf("[filetimes]: Something went wrong! Errno: %d\n", errno);
     }
     return 0;
 }
