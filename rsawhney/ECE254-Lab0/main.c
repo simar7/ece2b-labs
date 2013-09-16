@@ -77,8 +77,7 @@ int main (int argc, char *argv[])
 			printf("Last file modification: %s", ctime(&buf.st_mtime));
 			printf("Last status change: %s", ctime(&buf.st_ctime));
 			
-			printf("GID: %ld\n", buf.st_gid);
-			printf("UID: %ld\n", buf.st_uid);
+            		struct passwd *uid_struct;            		uid_struct = getpwuid(buf.st_uid);                       		struct group *gid_struct;                        		gid_struct = getgrgid(buf.st_gid);                        		printf("GID: %s\n", gid_struct->gr_name);			printf("UID: %s\n", uid_struct->pw_name);            		printf ("%s\t", str_name); 
 		}
 	}
 	return 0;
