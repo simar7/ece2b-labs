@@ -7,6 +7,7 @@
 #include <time.h>	// For ctime()
 #include <grp.h>	// For getgrgid()
 #include <errno.h>
+#include <string.h>
 
 int filepermissions(char* str_path)
 {
@@ -87,7 +88,7 @@ int filesizes(char* str_path)
     }
 
     off_t filesize = buf.st_size;
-    printf("%5llub\t", filesize);
+    printf("%5llub\t", (long long unsigned)filesize);
     printf("%s\n", str_path);
 
     return 0;
@@ -96,7 +97,7 @@ int filesizes(char* str_path)
 int fileownership(char* str_path)
 {
 	struct stat buf;
-    if (lstat(str_path, &buf ) < 0 )
+    if (stat(str_path, &buf ) < 0 )
 	{ 	
 		perror("stat() failed");
 		return -1;
@@ -108,7 +109,21 @@ int fileownership(char* str_path)
     printf("%5d\t", grpid);
     printf("%5d\t", usrid);
 
-    return 0;
+	struct passwd* uid_ptr;
+	uid_ptr = getpwuid(buf.st_uid);
+
+	printf("something to debug: %d", uid_ptr->pw_name);
+	/*
+	struct passwd* uid_struct;
+	uid_struct = getpwuid(buf.st_uid);
+
+	struct group* gid_struct;
+	gid_struct = getgrgid(buf.st_gid);
+
+	printf("GID: %s\n", gid_struct->gr_name);
+    printf("UID: %s\n", uid_struct->pw_name);
+   */
+	return 0;
 }
 
 int main( int argc, char* argv[] )
