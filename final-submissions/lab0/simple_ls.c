@@ -150,6 +150,8 @@ int main( int argc, char* argv[] )
 				printf("[filetimes]: Something went wrong! Errno: %d\n", errno);
 		
     }
+
+	closedir(p_dir);
     
 	return 0;
 }	
