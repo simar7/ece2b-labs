@@ -1,0 +1,109 @@
+Altera SOPC Builder Version 10.11 Build 197
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2013.09.10 20:11:20 (*) mk_custom_sdk starting
+# 2013.09.10 20:11:20 (*) Reading project N:/ECE224/ANT/my_controller.ptf.
+
+# 2013.09.10 20:11:20 (*) Finding all CPUs
+# 2013.09.10 20:11:20 (*) Finding all available components
+
+# 2013.09.10 20:11:20 (*) Reading N:/ECE224/ANT/.sopc_builder/install.ptf
+
+# 2013.09.10 20:11:20 (*) Found 63 components
+
+# 2013.09.10 20:11:21 (*) Finding all peripherals
+
+# 2013.09.10 20:11:21 (*) Finding software components
+
+# 2013.09.10 20:11:21 (*) (Legacy SDK Generation Skipped)
+# 2013.09.10 20:11:21 (*) (All TCL Script Generation Skipped)
+# 2013.09.10 20:11:21 (*) (No Libraries Built)
+# 2013.09.10 20:11:21 (*) (Contents Generation Skipped)
+# 2013.09.10 20:11:21 (*) mk_custom_sdk finishing
+# 2013.09.10 20:11:21 (*) Starting generation for system: my_controller.
+
+.
+.
+.
+.
+.
+...
+.......
+
+# 2013.09.10 20:11:22 (*) Running Generator Program for cpu_0
+
+# 2013.09.10 20:11:30 (*) Starting Nios II generation
+# 2013.09.10 20:11:30 (*)   Checking for plaintext license.
+# 2013.09.10 20:11:30 (*)   Couldn't query license setup in Quartus directory c:/software/altera/10.1/quartus
+# 2013.09.10 20:11:30 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2013.09.10 20:11:32 (*)   Plaintext license not found.
+# 2013.09.10 20:11:32 (*)   Checking for encrypted license (non-evaluation).
+# 2013.09.10 20:11:33 (*)   Couldn't query license setup in Quartus directory c:/software/altera/10.1/quartus
+
+# 2013.09.10 20:11:33 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2013.09.10 20:11:35 (*)   Encrypted license found.  SOF will not be time-limited.
+# 2013.09.10 20:11:35 (*)   Getting CPU configuration settings
+# 2013.09.10 20:11:35 (*)   Elaborating CPU configuration settings
+# 2013.09.10 20:11:35 (*)   Creating all objects for CPU
+# 2013.09.10 20:11:36 (*)     Pipeline frontend
+# 2013.09.10 20:11:37 (*)   Generating HDL from CPU objects
+# 2013.09.10 20:11:39 (*)   Creating encrypted HDL
+
+# 2013.09.10 20:11:40 (*) Done Nios II generation
+
+# 2013.09.10 20:11:40 (*) Running Generator Program for sysid
+
+# 2013.09.10 20:11:41 (*) Running Generator Program for jtag_uart_0
+
+# 2013.09.10 20:11:42 (*) Running Generator Program for sdram_0
+
+# 2013.09.10 20:11:44 (*) Running Generator Program for lcd_display
+
+# 2013.09.10 20:11:44 (*) Running Generator Program for led_pio
+
+# 2013.09.10 20:11:45 (*) Running Generator Program for seven_seg_pio
+
+# 2013.09.10 20:11:46 (*) Running Generator Program for button_pio
+
+# 2013.09.10 20:11:47 (*) Running Generator Program for timer_0
+
+# 2013.09.10 20:11:47 (*) Running Generator Program for timer_1
+
+# 2013.09.10 20:11:48 (*) Running Generator Program for green_led_pio
+
+# 2013.09.10 20:11:49 (*) Running Generator Program for red_led_pio
+
+# 2013.09.10 20:11:50 (*) Running Generator Program for seven_seg_middle_pio
+
+# 2013.09.10 20:11:50 (*) Running Generator Program for seven_seg_right_pio
+
+# 2013.09.10 20:11:51 (*) Running Generator Program for switch_pio
+
+.
+
+
+# 2013.09.10 20:11:52 (*) Running Test Generator Program for sdram_0
+
+# 2013.09.10 20:11:52 (*) Making arbitration and system (top) modules.
+
+# 2013.09.10 20:11:57 (*) Generating Quartus symbol for top level: my_controller
+
+# 2013.09.10 20:11:57 (*) Generating Symbol N:/ECE224/ANT/my_controller.bsf
+
+# 2013.09.10 20:11:57 (*) Creating command-line system-generation script: N:/ECE224/ANT/my_controller_generation_script
+
+# 2013.09.10 20:11:57 (*) Running setup for HDL simulator: modelsim
+
+
+# 2013.09.10 20:11:58 (*) Completed generation for system: my_controller.
+# 2013.09.10 20:11:58 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : N:/ECE224/ANT/my_controller.ptf 
+  System HDL Model : N:/ECE224/ANT/my_controller.v 
+  System Generation Script : N:/ECE224/ANT/my_controller_generation_script 
+
+# 2013.09.10 20:11:58 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.
