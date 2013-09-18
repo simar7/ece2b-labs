@@ -119,6 +119,16 @@ int main( int argc, char* argv[] )
 {
 	DIR *p_dir;
 	struct dirent *p_dirent;
+    
+	if( (argc < 2) || ( strcmp( argv[1], "-h") == 0 )  || (argc > 3) )
+    {
+        printf("Usage: %s <dir name>\n", argv[0]);
+        printf("-h \t Show help\n");
+        printf("-vvv \t Be Very Verbose (default)\n");
+        printf("-P \t Be Precise\n");
+        exit(1);
+    }
+
 
 	if( (p_dir = opendir(argv[1])) == NULL )
 	{
@@ -137,13 +147,13 @@ int main( int argc, char* argv[] )
 		}
 
 		if( filepermissions(str_path) != 0 )	
-			printf("Something went wrong! Errno: %d\n", errno);
+			printf("[filepermissions]: Something went wrong! Errno: %d\n", errno);
 
 		if( fileownership(str_path) != 0 )
-			printf("Something went wrong! Errno: %d\n", errno);
+			printf("[fileownership]: Something went wrong! Errno: %d\n", errno);
 
 		if( filesizes(str_path) != 0 )
-			printf("Something went wrong! Errno: %d\n", errno);
+			printf("[filesizes]: Something went wrong! Errno: %d\n", errno);
 
 		if( ! ((argv[2]) && strcmp(argv[2],  "-p")) )
 			if( filetimes(str_path) != 0 )
