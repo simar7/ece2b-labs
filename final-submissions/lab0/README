@@ -1,0 +1,51 @@
+8888888888 .d8888b.  8888888888       .d8888b.  888888888      d8888  
+888       d88P  Y88b 888             d88P  Y88b 888           d8P888  
+888       888    888 888                    888 888          d8P 888  
+8888888   888        8888888              .d88P 8888888b.   d8P  888  
+888       888        888              .od888P"       "Y88b d88   888  
+888       888    888 888             d88P"             888 8888888888 
+888       Y88b  d88P 888             888"       Y88b  d88P       888  
+8888888888 "Y8888P"  8888888888      888888888   "Y8888P"        888  
+
+888               888            .d8888b.        d8888 
+888               888           d88P  Y88b      d88888 
+888               888           888    888     d88P888 
+888       8888b.  88888b.       888    888    d88P 888 
+888          "88b 888 "88b      888    888   d88P  888 
+888      .d888888 888  888      888    888  d88P   888 
+888      888  888 888 d88P      Y88b  d88P d8888888888 
+88888888 "Y888888 88888P"        "Y8888P" d88P     888 
+                                                       
+
+
+Student #1: Simarpreet Singh
+Email: s244sing@uwaterloo.ca
+ID: 20434209
+
+Student #2: Raunaq Sawhney
+Email: rsawhney@uwaterloo.ca
+ID: ....
+
+-----------------------------
+
+How to build this?
+------------------
+
+*) Project includes a Makefile with following options:
+	a) make debug: generate binary with debug symbols.
+	b) make clean: clean project.
+	c) make		 : build everything.
+	d) make extra: Enable all gcc Warnings with -Wall.
+
+How to run this?
+----------------
+
+*) Project include user switch handling with following options:
+	a) -P: Be Precise, no times. Keeps it < 80 char.
+	b) -vvv: (default) Be Very Verbose and output all required information.
+	c) -h: Print help.
+
+
+------------------------------
+
+
