@@ -28,6 +28,11 @@ ID: ....
 
 -----------------------------
 
+How to extract this?
+--------------------
+
+*) tar -xvzf lab0A_linux.gz
+
 How to build this?
 ------------------
 
