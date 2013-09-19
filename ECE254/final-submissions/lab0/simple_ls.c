@@ -156,8 +156,7 @@ int main( int argc, char* argv[] )
 		if( filesizes(str_path) != 0 )
 			printf("[filesizes]: Something went wrong! Errno: %d\n", errno);
 
-		if( strcmp(argv[2],  "-p") )
-			if( filetimes(str_path) != 0 )
+	    if( filetimes(str_path) != 0 )
 				printf("[filetimes]: Something went wrong! Errno: %d\n", errno);
 		
     }
