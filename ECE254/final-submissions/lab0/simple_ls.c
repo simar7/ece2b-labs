@@ -133,7 +133,7 @@ int main( int argc, char* argv[] )
 
 	if( (p_dir = opendir(".")) == NULL )
 	{
-		printf("opendir(%s) failed\n", argv[1]);
+		printf("opendir() failed\n");
 		exit(1);
 	}
 
