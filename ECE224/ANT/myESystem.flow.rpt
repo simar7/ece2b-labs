@@ -1,5 +1,5 @@
 Flow report for myESystem
-Tue Sep 10 21:04:32 2013
+Wed Sep 18 20:26:04 2013
 Quartus II 64-Bit Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Tue Sep 10 21:04:32 2013          ;
+; Flow Status                        ; Successful - Wed Sep 18 20:26:04 2013          ;
 ; Quartus II 64-Bit Version          ; 10.1 Build 197 01/19/2011 SP 1 SJ Full Version ;
 ; Revision Name                      ; myESystem                                      ;
 ; Top-level Entity Name              ; myESystem                                      ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/10/2013 21:02:35 ;
+; Start date & time ; 09/18/2013 20:25:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; myESystem           ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 247163805191080.137886135503268 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 106258771469721.137953231405724 ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ALTPLL                          ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 10.1                            ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --         ;
@@ -94,11 +94,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:47     ; 1.0                     ; 462 MB              ; 00:00:25                           ;
-; Fitter                    ; 00:00:40     ; 1.5                     ; 555 MB              ; 00:00:20                           ;
-; TimeQuest Timing Analyzer ; 00:00:13     ; 1.0                     ; 411 MB              ; 00:00:04                           ;
-; Assembler                 ; 00:00:08     ; 1.0                     ; 376 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:48     ; --                      ; --                  ; 00:00:51                           ;
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 444 MB              ; 00:00:17                           ;
+; Fitter                    ; 00:00:17     ; 1.1                     ; 497 MB              ; 00:00:15                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.7                     ; 392 MB              ; 00:00:04                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 372 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:49     ; --                      ; --                  ; 00:00:38                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,10 +107,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; weef-c04         ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; weef-c04         ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; weef-c04         ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; weef-c04         ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; ECE-PUBLIC06     ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; ECE-PUBLIC06     ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; ECE-PUBLIC06     ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; ECE-PUBLIC06     ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

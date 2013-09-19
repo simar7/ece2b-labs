@@ -1,5 +1,5 @@
 Analysis & Synthesis report for myESystem
-Tue Sep 10 21:03:28 2013
+Wed Sep 18 20:25:38 2013
 Quartus II 64-Bit Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Full Version
 
 
@@ -100,7 +100,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 10 21:03:27 2013          ;
+; Analysis & Synthesis Status        ; Successful - Wed Sep 18 20:25:38 2013          ;
 ; Quartus II 64-Bit Version          ; 10.1 Build 197 01/19/2011 SP 1 SJ Full Version ;
 ; Revision Name                      ; myESystem                                      ;
 ; Top-level Entity Name              ; myESystem                                      ;
@@ -203,72 +203,72 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-4 processors         ;   0.0%      ;
+;     2 processors           ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+-----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------+
-; File Name with User-Entered Path  ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                      ;
-+-----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------+
-; sdram_pll.vhd                     ; yes             ; User Wizard-Generated File               ; N:/ECE224/ANT/sdram_pll.vhd                                                       ;
-; myesystem.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; N:/ECE224/ANT/myesystem.bdf                                                       ;
-; altpll.tdf                        ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/altpll.tdf                ;
-; my_controller.v                   ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/my_controller.v                                                     ;
-; button_pio.v                      ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/button_pio.v                                                        ;
-; cpu_0.v                           ; yes             ; Encrypted Auto-Found Verilog HDL File    ; N:/ECE224/ANT/cpu_0.v                                                             ;
-; cpu_0_test_bench.v                ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/cpu_0_test_bench.v                                                  ;
-; altsyncram.tdf                    ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/altsyncram.tdf            ;
-; db/altsyncram_qed1.tdf            ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/altsyncram_qed1.tdf                                              ;
-; db/altsyncram_d5g1.tdf            ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/altsyncram_d5g1.tdf                                              ;
-; cpu_0_ic_tag_ram.mif              ; yes             ; Auto-Found Memory Initialization File    ; N:/ECE224/ANT/cpu_0_ic_tag_ram.mif                                                ;
-; db/altsyncram_irf1.tdf            ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/altsyncram_irf1.tdf                                              ;
-; cpu_0_rf_ram_a.mif                ; yes             ; Auto-Found Memory Initialization File    ; N:/ECE224/ANT/cpu_0_rf_ram_a.mif                                                  ;
-; db/altsyncram_jrf1.tdf            ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/altsyncram_jrf1.tdf                                              ;
-; cpu_0_rf_ram_b.mif                ; yes             ; Auto-Found Memory Initialization File    ; N:/ECE224/ANT/cpu_0_rf_ram_b.mif                                                  ;
-; db/altsyncram_c572.tdf            ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/altsyncram_c572.tdf                                              ;
-; cpu_0_ociram_default_contents.mif ; yes             ; Auto-Found Memory Initialization File    ; N:/ECE224/ANT/cpu_0_ociram_default_contents.mif                                   ;
-; cpu_0_oci_test_bench.v            ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/cpu_0_oci_test_bench.v                                              ;
-; db/altsyncram_e502.tdf            ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/altsyncram_e502.tdf                                              ;
-; cpu_0_jtag_debug_module_wrapper.v ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/cpu_0_jtag_debug_module_wrapper.v                                   ;
-; cpu_0_jtag_debug_module_tck.v     ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/cpu_0_jtag_debug_module_tck.v                                       ;
-; altera_std_synchronizer.v         ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/altera_std_synchronizer.v ;
-; cpu_0_jtag_debug_module_sysclk.v  ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/cpu_0_jtag_debug_module_sysclk.v                                    ;
-; sld_virtual_jtag_basic.v          ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v  ;
-; green_led_pio.v                   ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/green_led_pio.v                                                     ;
-; jtag_uart_0.v                     ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/jtag_uart_0.v                                                       ;
-; scfifo.tdf                        ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/scfifo.tdf                ;
-; db/scfifo_1n21.tdf                ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/scfifo_1n21.tdf                                                  ;
-; db/a_dpfifo_8t21.tdf              ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/a_dpfifo_8t21.tdf                                                ;
-; db/a_fefifo_7cf.tdf               ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/a_fefifo_7cf.tdf                                                 ;
-; db/cntr_rj7.tdf                   ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/cntr_rj7.tdf                                                     ;
-; db/dpram_5h21.tdf                 ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/dpram_5h21.tdf                                                   ;
-; db/altsyncram_9tl1.tdf            ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/altsyncram_9tl1.tdf                                              ;
-; db/cntr_fjb.tdf                   ; yes             ; Auto-Generated Megafunction              ; N:/ECE224/ANT/db/cntr_fjb.tdf                                                     ;
-; alt_jtag_atlantic.v               ; yes             ; Encrypted Megafunction                   ; c:/software/altera/10.1/quartus/libraries/megafunctions/alt_jtag_atlantic.v       ;
-; lcd_display.v                     ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/lcd_display.v                                                       ;
-; led_pio.v                         ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/led_pio.v                                                           ;
-; red_led_pio.v                     ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/red_led_pio.v                                                       ;
-; sdram_0.v                         ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/sdram_0.v                                                           ;
-; seven_seg_middle_pio.v            ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/seven_seg_middle_pio.v                                              ;
-; seven_seg_pio.v                   ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/seven_seg_pio.v                                                     ;
-; seven_seg_right_pio.v             ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/seven_seg_right_pio.v                                               ;
-; switch_pio.v                      ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/switch_pio.v                                                        ;
-; sysid.v                           ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/sysid.v                                                             ;
-; timer_0.v                         ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/timer_0.v                                                           ;
-; timer_1.v                         ; yes             ; Auto-Found Verilog HDL File              ; N:/ECE224/ANT/timer_1.v                                                           ;
-; sld_hub.vhd                       ; yes             ; Encrypted Megafunction                   ; c:/software/altera/10.1/quartus/libraries/megafunctions/sld_hub.vhd               ;
-; sld_rom_sr.vhd                    ; yes             ; Encrypted Megafunction                   ; c:/software/altera/10.1/quartus/libraries/megafunctions/sld_rom_sr.vhd            ;
-+-----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++-----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                             ;
++-----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+
+; sdram_pll.vhd                     ; yes             ; User Wizard-Generated File               ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/sdram_pll.vhd                     ;
+; myesystem.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/myesystem.bdf                     ;
+; altpll.tdf                        ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/altpll.tdf                       ;
+; my_controller.v                   ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/my_controller.v                   ;
+; button_pio.v                      ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/button_pio.v                      ;
+; cpu_0.v                           ; yes             ; Encrypted Auto-Found Verilog HDL File    ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0.v                           ;
+; cpu_0_test_bench.v                ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_test_bench.v                ;
+; altsyncram.tdf                    ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/altsyncram.tdf                   ;
+; db/altsyncram_qed1.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/altsyncram_qed1.tdf            ;
+; db/altsyncram_d5g1.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/altsyncram_d5g1.tdf            ;
+; cpu_0_ic_tag_ram.mif              ; yes             ; Auto-Found Memory Initialization File    ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_ic_tag_ram.mif              ;
+; db/altsyncram_irf1.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/altsyncram_irf1.tdf            ;
+; cpu_0_rf_ram_a.mif                ; yes             ; Auto-Found Memory Initialization File    ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_rf_ram_a.mif                ;
+; db/altsyncram_jrf1.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/altsyncram_jrf1.tdf            ;
+; cpu_0_rf_ram_b.mif                ; yes             ; Auto-Found Memory Initialization File    ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_rf_ram_b.mif                ;
+; db/altsyncram_c572.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/altsyncram_c572.tdf            ;
+; cpu_0_ociram_default_contents.mif ; yes             ; Auto-Found Memory Initialization File    ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_ociram_default_contents.mif ;
+; cpu_0_oci_test_bench.v            ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_oci_test_bench.v            ;
+; db/altsyncram_e502.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/altsyncram_e502.tdf            ;
+; cpu_0_jtag_debug_module_wrapper.v ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_jtag_debug_module_wrapper.v ;
+; cpu_0_jtag_debug_module_tck.v     ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_jtag_debug_module_tck.v     ;
+; altera_std_synchronizer.v         ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/altera_std_synchronizer.v        ;
+; cpu_0_jtag_debug_module_sysclk.v  ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0_jtag_debug_module_sysclk.v  ;
+; sld_virtual_jtag_basic.v          ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v         ;
+; green_led_pio.v                   ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/green_led_pio.v                   ;
+; jtag_uart_0.v                     ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/jtag_uart_0.v                     ;
+; scfifo.tdf                        ; yes             ; Megafunction                             ; c:/software/altera/10.1/quartus/libraries/megafunctions/scfifo.tdf                       ;
+; db/scfifo_1n21.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/scfifo_1n21.tdf                ;
+; db/a_dpfifo_8t21.tdf              ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/a_dpfifo_8t21.tdf              ;
+; db/a_fefifo_7cf.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/a_fefifo_7cf.tdf               ;
+; db/cntr_rj7.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/cntr_rj7.tdf                   ;
+; db/dpram_5h21.tdf                 ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/dpram_5h21.tdf                 ;
+; db/altsyncram_9tl1.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/altsyncram_9tl1.tdf            ;
+; db/cntr_fjb.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/db/cntr_fjb.tdf                   ;
+; alt_jtag_atlantic.v               ; yes             ; Encrypted Megafunction                   ; c:/software/altera/10.1/quartus/libraries/megafunctions/alt_jtag_atlantic.v              ;
+; lcd_display.v                     ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/lcd_display.v                     ;
+; led_pio.v                         ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/led_pio.v                         ;
+; red_led_pio.v                     ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/red_led_pio.v                     ;
+; sdram_0.v                         ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/sdram_0.v                         ;
+; seven_seg_middle_pio.v            ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/seven_seg_middle_pio.v            ;
+; seven_seg_pio.v                   ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/seven_seg_pio.v                   ;
+; seven_seg_right_pio.v             ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/seven_seg_right_pio.v             ;
+; switch_pio.v                      ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/switch_pio.v                      ;
+; sysid.v                           ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/sysid.v                           ;
+; timer_0.v                         ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/timer_0.v                         ;
+; timer_1.v                         ; yes             ; Auto-Found Verilog HDL File              ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/timer_1.v                         ;
+; sld_hub.vhd                       ; yes             ; Encrypted Megafunction                   ; c:/software/altera/10.1/quartus/libraries/megafunctions/sld_hub.vhd                      ;
+; sld_rom_sr.vhd                    ; yes             ; Encrypted Megafunction                   ; c:/software/altera/10.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                   ;
++-----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------+
@@ -420,14 +420,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                        ;
-+--------+-------------------------------+---------+--------------+--------------+-----------------------------------------------+-----------------------------+
-; Vendor ; IP Core Name                  ; Version ; Release Date ; License Type ; Entity Instance                               ; IP Include File             ;
-+--------+-------------------------------+---------+--------------+--------------+-----------------------------------------------+-----------------------------+
-; Altera ; Nios II Processor (6AF7_00A2) ; N/A     ; Apr 2004     ; Licensed     ; |myESystem|my_controller:inst|cpu_0:the_cpu_0 ; N:/ECE224/ANT/cpu_0.v       ;
-; Altera ; ALTPLL                        ; 10.1    ; N/A          ; N/A          ; |myESystem|sdram_pll:inst1                    ; N:/ECE224/ANT/sdram_pll.vhd ;
-+--------+-------------------------------+---------+--------------+--------------+-----------------------------------------------+-----------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                 ;
++--------+-------------------------------+---------+--------------+--------------+-----------------------------------------------+----------------------------------------------------------------------+
+; Vendor ; IP Core Name                  ; Version ; Release Date ; License Type ; Entity Instance                               ; IP Include File                                                      ;
++--------+-------------------------------+---------+--------------+--------------+-----------------------------------------------+----------------------------------------------------------------------+
+; Altera ; Nios II Processor (6AF7_00A2) ; N/A     ; Apr 2004     ; Licensed     ; |myESystem|my_controller:inst|cpu_0:the_cpu_0 ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/cpu_0.v       ;
+; Altera ; ALTPLL                        ; 10.1    ; N/A          ; N/A          ; |myESystem|sdram_pll:inst1                    ; C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/sdram_pll.vhd ;
++--------+-------------------------------+---------+--------------+--------------+-----------------------------------------------+----------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -807,13 +807,6 @@ Encoding Type:  One-Hot
 ; 9:1                ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |myESystem|my_controller:inst|cpu_0:the_cpu_0|E_wrctl_data_ienable_reg_irq2                                                                                                                                              ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; No         ; |myESystem|my_controller:inst|sdram_0:the_sdram_0|Selector35                                                                                                                                                             ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |myESystem|my_controller:inst|sdram_0:the_sdram_0|Selector28                                                                                                                                                             ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |myESystem|sld_hub:auto_hub|irf_reg[2][4]                                                                                                                                                                                ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |myESystem|sld_hub:auto_hub|irf_reg[1][0]                                                                                                                                                                                ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |myESystem|sld_hub:auto_hub|sld_rom_sr:hub_info_reg|word_counter[2]                                                                                                                                                      ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |myESystem|sld_hub:auto_hub|shadow_irf_reg[2][3]                                                                                                                                                                         ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |myESystem|sld_hub:auto_hub|shadow_irf_reg[1][2]                                                                                                                                                                         ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; Yes        ; |myESystem|sld_hub:auto_hub|irsr_reg[2]                                                                                                                                                                                  ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |myESystem|sld_hub:auto_hub|sld_rom_sr:hub_info_reg|WORD_SR[1]                                                                                                                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -2196,14 +2189,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:20     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:13     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -2212,9 +2204,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Sep 10 21:02:33 2013
+    Info: Processing started: Wed Sep 18 20:25:13 2013
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off myESystem -c myESystem
-Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 2 design units, including 1 entities, in source file sdram_pll.vhd
     Info: Found design unit 1: sdram_pll-SYN
     Info: Found entity 1: sdram_pll
@@ -2473,7 +2465,6 @@ Info: Elaborating entity "cpu_0_nios2_oci_fifocount_inc" for hierarchy "my_contr
 Warning: Using design file cpu_0_oci_test_bench.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: cpu_0_oci_test_bench
 Info: Elaborating entity "cpu_0_oci_test_bench" for hierarchy "my_controller:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_oci_test_bench:the_cpu_0_oci_test_bench"
-Warning: Entity "cpu_0_oci_test_bench" contains only dangling pins
 Info: Elaborating entity "cpu_0_nios2_oci_pib" for hierarchy "my_controller:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_pib:the_cpu_0_nios2_oci_pib"
 Info: Elaborating entity "cpu_0_nios2_oci_im" for hierarchy "my_controller:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im"
 Info: Elaborating entity "cpu_0_traceram_lpm_dram_bdp_component_module" for hierarchy "my_controller:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component"
@@ -2758,9 +2749,7 @@ Info: 73 registers lost all their fanouts during netlist optimizations. The firs
     Info: Register "my_controller:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize~4" lost all its fanouts during netlist optimizations.
     Info: Register "my_controller:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize~5" lost all its fanouts during netlist optimizations.
     Info: Register "my_controller:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize.101" lost all its fanouts during netlist optimizations.
-Info: Registers with preset signals will power-up high
-Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info: Generated suppressed messages file N:/ECE224/ANT/myESystem.map.smsg
+Info: Generated suppressed messages file C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/myESystem.map.smsg
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
     Info: Adding node "sdram_pll:inst1|altpll:altpll_component|pll"
 Info: Implemented 3841 device resources after synthesis - the final resource count might be different
@@ -2770,16 +2759,16 @@ Info: Implemented 3841 device resources after synthesis - the final resource cou
     Info: Implemented 3509 logic cells
     Info: Implemented 165 RAM segments
     Info: Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 69 warnings
-    Info: Peak virtual memory: 462 megabytes
-    Info: Processing ended: Tue Sep 10 21:03:28 2013
-    Info: Elapsed time: 00:00:55
-    Info: Total CPU time (on all processors): 00:00:27
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 68 warnings
+    Info: Peak virtual memory: 444 megabytes
+    Info: Processing ended: Wed Sep 18 20:25:38 2013
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in N:/ECE224/ANT/myESystem.map.smsg.
+The suppressed messages can be found in C:/cygwin64/home/s244sing/School/ece2b-labs/ECE224/ANT/myESystem.map.smsg.
 
 
