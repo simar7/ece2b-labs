@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379616014351
+error,log,,,"CPU architecture type not set. ",1379616014351
+error,log,,,"CPU master group not set.",1379616014351
+error,log,,,"SOPC design not set.",1379616014483
+error,log,,,"CPU module not set.",1379616014484
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379616014484
+error,log,,,"CPU architecture type not set. ",1379616014484
+error,log,,,"CPU master group not set.",1379616014484
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1379616014524
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616016188
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616016718
+error,log,,,"SOPC design not set.",1379616016757
+error,log,,,"CPU module not set.",1379616016758
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379616016760
+error,log,,,"CPU architecture type not set. ",1379616016761
+error,log,,,"CPU master group not set.",1379616016762
+error,log,,,"SOPC design not set.",1379616016889
+error,log,,,"CPU module not set.",1379616016891
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379616016891
+error,log,,,"CPU architecture type not set. ",1379616016891
+error,log,,,"CPU master group not set.",1379616016891
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1379616018049
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1379616020827
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10010d0, --id=0x0, --timestamp=1378857897, /cygdrive/c/cygwin64/home/s244sing/ece2b-labs/ECE224/ANT/software/lab1-phase1/lab1-phase1.elf] return code: 4, 'other error'",1379616027177
+error,log,,,"Downloading ELF Process failed",1379616027179

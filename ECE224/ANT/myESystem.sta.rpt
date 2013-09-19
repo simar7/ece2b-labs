@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for myESystem
-Wed Sep 18 20:26:04 2013
+Thu Sep 19 14:48:42 2013
 Quartus II 64-Bit Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Full Version
 
 
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; cpu_0.sdc     ; OK     ; Wed Sep 18 20:26:02 2013 ;
+; cpu_0.sdc     ; OK     ; Thu Sep 19 14:48:41 2013 ;
 +---------------+--------+--------------------------+
 
 
@@ -289,8 +289,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Unconstrained Clocks            ; 1     ; 1    ;
 ; Unconstrained Input Ports       ; 46    ; 46   ;
 ; Unconstrained Input Port Paths  ; 51    ; 51   ;
-; Unconstrained Output Ports      ; 135   ; 135  ;
-; Unconstrained Output Port Paths ; 189   ; 189  ;
+; Unconstrained Output Ports      ; 136   ; 136  ;
+; Unconstrained Output Port Paths ; 190   ; 190  ;
 +---------------------------------+-------+------+
 
 
@@ -300,7 +300,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Sep 18 20:25:59 2013
+    Info: Processing started: Thu Sep 19 14:48:39 2013
 Info: Command: quartus_sta myESystem -c myESystem
 Info: qsta_default_script.tcl version: #4
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -534,9 +534,9 @@ Info: The selected device family is not supported by the report_metastability co
 Info: Design is not fully constrained for setup requirements
 Info: Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 392 megabytes
-    Info: Processing ended: Wed Sep 18 20:26:04 2013
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 396 megabytes
+    Info: Processing ended: Thu Sep 19 14:48:42 2013
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

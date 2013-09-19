@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1379616207423
+activated,view,org.eclipse.ui.views.log,1.0.100.v20090731,"org.eclipse.pde.runtime.LogView",1379616208444
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1379616211439
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x10010d0, --id=0x0, --timestamp=1378857897, /cygdrive/c/cygwin64/home/s244sing/ece2b-labs/ECE224/ANT/software/lab1-phase1/lab1-phase1.elf] return code: 4, 'other error'",1379616213928
+error,log,,,"Downloading ELF Process failed",1379616213930
+activated,view,org.eclipse.ui.views.log,1.0.100.v20090731,"org.eclipse.pde.runtime.LogView",1379616213948
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616214039
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616215749
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616217298
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616222125
+error,log,,,"SOPC design not set.",1379616227756
+error,log,,,"CPU module not set.",1379616227757
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379616227758
+error,log,,,"CPU architecture type not set. ",1379616227759
+error,log,,,"CPU master group not set.",1379616227761
+error,log,,,"SOPC design not set.",1379616227762
+error,log,,,"CPU module not set.",1379616227763
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379616227765
+error,log,,,"CPU architecture type not set. ",1379616227766
+error,log,,,"CPU master group not set.",1379616227768
+error,log,,,"Expected base address of system ID component is undefined.",1379616227768
+error,log,,,"SOPC design not set.",1379616227769
+error,log,,,"CPU module not set.",1379616227769
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379616227770
+error,log,,,"CPU architecture type not set. ",1379616227770

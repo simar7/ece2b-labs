@@ -1,5 +1,5 @@
 Flow report for myESystem
-Wed Sep 18 20:26:04 2013
+Thu Sep 19 14:48:43 2013
 Quartus II 64-Bit Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Full Version
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Wed Sep 18 20:26:04 2013          ;
+; Flow Status                        ; Successful - Thu Sep 19 14:48:43 2013          ;
 ; Quartus II 64-Bit Version          ; 10.1 Build 197 01/19/2011 SP 1 SJ Full Version ;
 ; Revision Name                      ; myESystem                                      ;
 ; Top-level Entity Name              ; myESystem                                      ;
 ; Family                             ; Cyclone II                                     ;
 ; Device                             ; EP2C35F672C6                                   ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 3,007 / 33,216 ( 9 % )                         ;
-;     Total combinational functions  ; 2,749 / 33,216 ( 8 % )                         ;
+; Total logic elements               ; 3,012 / 33,216 ( 9 % )                         ;
+;     Total combinational functions  ; 2,752 / 33,216 ( 8 % )                         ;
 ;     Dedicated logic registers      ; 1,752 / 33,216 ( 5 % )                         ;
-; Total registers                    ; 1819                                           ;
+; Total registers                    ; 1820                                           ;
 ; Total pins                         ; 161 / 475 ( 34 % )                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 46,720 / 483,840 ( 10 % )                      ;
@@ -62,31 +62,31 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/18/2013 20:25:14 ;
+; Start date & time ; 09/19/2013 14:48:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; myESystem           ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                 ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 106258771469721.137953231405724 ; --            ; --          ; --         ;
-; IP_TOOL_NAME                        ; ALTPLL                          ; --            ; --          ; --         ;
-; IP_TOOL_VERSION                     ; 10.1                            ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --         ;
-; MISC_FILE                           ; sdram_pll.bsf                   ; --            ; --          ; --         ;
-; MISC_FILE                           ; sdram_pll.cmp                   ; --            ; --          ; --         ;
-; MISC_FILE                           ; sdram_pll.ppf                   ; --            ; --          ; --         ;
-; MISC_FILE                           ; N:/ECE224/ANT/myESystem.dpf     ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top        ;
-; SOPC_BUILDER_SIGNATURE_ID           ; E0cb4ecf4ba8000001410a59fe34    ; --            ; --          ; --         ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
++----------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                               ;
++-------------------------------------+-------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                         ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+-------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 9210263401006.137961648400212 ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTPLL                        ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 10.1                          ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                            ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; sdram_pll.bsf                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; sdram_pll.cmp                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; sdram_pll.ppf                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; N:/ECE224/ANT/myESystem.dpf   ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                      ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; --          ; Top        ;
+; SOPC_BUILDER_SIGNATURE_ID           ; E0cb4ecf4ba8000001410a59fe34  ; --            ; --          ; --         ;
++-------------------------------------+-------------------------------+---------------+-------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -94,11 +94,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 444 MB              ; 00:00:17                           ;
-; Fitter                    ; 00:00:17     ; 1.1                     ; 497 MB              ; 00:00:15                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.7                     ; 392 MB              ; 00:00:04                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 372 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:49     ; --                      ; --                  ; 00:00:38                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 441 MB              ; 00:00:16                           ;
+; Fitter                    ; 00:00:15     ; 1.2                     ; 501 MB              ; 00:00:14                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.7                     ; 396 MB              ; 00:00:03                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 376 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:38     ; --                      ; --                  ; 00:00:35                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,10 +107,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; ECE-PUBLIC06     ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; ECE-PUBLIC06     ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; ECE-PUBLIC06     ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; ECE-PUBLIC06     ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; ECE-CPUIO22      ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; ECE-CPUIO22      ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; ECE-CPUIO22      ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; ECE-CPUIO22      ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

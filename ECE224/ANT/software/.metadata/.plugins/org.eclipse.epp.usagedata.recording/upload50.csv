@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615940800
+error,log,,,"CPU architecture type not set. ",1379615940800
+error,log,,,"CPU master group not set.",1379615940801
+error,log,,,"Expected base address of system ID component is undefined.",1379615940801
+error,log,,,"SOPC design not set.",1379615940802
+error,log,,,"CPU module not set.",1379615940802
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615940802
+error,log,,,"CPU architecture type not set. ",1379615940803
+error,log,,,"CPU master group not set.",1379615940803
+error,log,,,"Expected base address of system ID component is undefined.",1379615940803
+error,log,,,"SOPC design not set.",1379615940804
+error,log,,,"CPU module not set.",1379615940804
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615940805
+error,log,,,"CPU architecture type not set. ",1379615940805
+error,log,,,"CPU master group not set.",1379615940805
+error,log,,,"Expected base address of system ID component is undefined.",1379615940806
+error,log,,,"Expected base address of system ID component is undefined.",1379615940806
+error,log,,,"No ELF file path has been selected.",1379615940812
+error,log,,,"Expected base address of system ID component is undefined.",1379615940813
+error,log,,,"No ELF file path has been selected.",1379615940843
+error,log,,,"No ELF file path has been selected.",1379615940845
+error,log,,,"Expected base address of system ID component is undefined.",1379615940845
+error,log,,,"No ELF file path has been selected.",1379615940865
+error,log,,,"No ELF file path has been selected.",1379615940867
+error,log,,,"Expected base address of system ID component is undefined.",1379615940867

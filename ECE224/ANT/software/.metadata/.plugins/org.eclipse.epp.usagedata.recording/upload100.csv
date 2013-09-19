@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"CPU module not set.",1379618571617
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379618571617
+error,log,,,"CPU architecture type not set. ",1379618571618
+error,log,,,"CPU master group not set.",1379618571618
+error,log,,,"Connected system ID hash not found on target at expected base address.",1379618571618
+error,log,,,"Connected system timestamp not found on target at expected base address.",1379618571618
+error,log,,,"Connected system ID hash not found on target at expected base address.",1379618571622
+error,log,,,"Connected system timestamp not found on target at expected base address.",1379618571622
+error,log,,,"SOPC design not set.",1379618571674
+error,log,,,"CPU module not set.",1379618571674
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379618571675
+error,log,,,"CPU architecture type not set. ",1379618571675
+error,log,,,"CPU master group not set.",1379618571675
+error,log,,,"SOPC design not set.",1379618571809
+error,log,,,"CPU module not set.",1379618571809
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379618571809
+error,log,,,"CPU architecture type not set. ",1379618571809
+error,log,,,"CPU master group not set.",1379618571810
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1379618571824
+started,bundle,org.eclipse.cdt.launch,6.0.0.200909110608,"org.eclipse.cdt.launch",1379618571830
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379618573609
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379618574120
+error,log,,,"SOPC design not set.",1379618574156
+error,log,,,"CPU module not set.",1379618574157
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379618574158

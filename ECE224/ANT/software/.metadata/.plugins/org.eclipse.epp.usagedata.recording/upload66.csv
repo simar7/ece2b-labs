@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615963415
+error,log,,,"No ELF file path has been selected.",1379615965164
+error,log,,,"Expected base address of system ID component is undefined.",1379615965165
+error,log,,,"No ELF file path has been selected.",1379615967341
+error,log,,,"Expected base address of system ID component is undefined.",1379615967342
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615968764
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615979421
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615980590
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1379615984119
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1379615984247
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1379615985746
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1379615986879
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1379615990710
+executed,command,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.project.buildProject",1379615991973
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615992260
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615997160
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615997728
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616001144
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616011666
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379616013445
+error,log,,,"SOPC design not set.",1379616014306
+error,log,,,"CPU module not set.",1379616014307
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379616014308
+error,log,,,"CPU architecture type not set. ",1379616014309
+error,log,,,"CPU master group not set.",1379616014310

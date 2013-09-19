@@ -1,0 +1,28 @@
+#include "system.h"
+#include "sys/alt_irq.h"
+#include "sys/alt_sys_init.h"
+
+void get_button_push(int button)
+{
+	alt_u8 mask; // mask that will be used to select desired bit
+
+	// set up the mask based on the desired button, 0-3
+	mask = 0x1;
+	mask = mask << button;
+
+	// wait for the desired button to be pushed
+	while( (IORD(BUTTON_PIO_BASE, 0) & mask) != 0);
+
+	printf("You pushed button %d\n",button);
+
+	// wait for the desired button to be released
+	while( (IORD(BUTTON_PIO_BASE, 0) & mask) == 0);
+
+}
+
+int main(int argc, char* argv[])
+{
+	IORD(BUTTON_PIO_BASE, 0);
+
+	get_button_push()
+}
