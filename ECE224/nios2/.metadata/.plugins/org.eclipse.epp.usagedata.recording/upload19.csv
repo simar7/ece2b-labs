@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.specification.version,sysinfo,,,"1.0",1379532526884
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1379532526884
+java.vm.version,sysinfo,,,"14.0-b16",1379532526884
+started,bundle,org.eclipse.cdt.managedbuilder.gnu.ui,5.0.100.200909110608,"org.eclipse.cdt.managedbuilder.gnu.ui",1379532527041
+started,bundle,org.eclipse.cdt.make.core,6.0.0.200909110608,"org.eclipse.cdt.make.core",1379532527059
+started,bundle,com.altera.sbtgui.integration,10.1.0.153,"com.altera.sbtgui.integration",1379532527735
+started,bundle,com.altera.systemconsole,10.1.0.153,"com.altera.systemconsole",1379532527752
+started,bundle,org.eclipse.epp.usagedata.ui,1.1.0.R200906100410,"org.eclipse.epp.usagedata.ui",1379532527948
+started,bundle,com.altera.utilities,10.1.0.153,"com.altera.utilities",1379532527998
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532529393
+started,bundle,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch",1379532532977
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532552123
+started,bundle,com.altera.sbtgui.core,10.1.0.153,"com.altera.sbtgui.core",1379532562518
+started,bundle,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring",1379532581089
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532581178
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532595527
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1379532595530
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1379532595530
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532607552
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532608057
+started,bundle,com.altera.sbtgui.ui,10.1.0.153,"com.altera.sbtgui.ui",1379532642621
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532642672
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532648572
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532654554
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379532723289

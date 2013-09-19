@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379533714474
+error,log,,,"CPU architecture type not set. ",1379533714484
+error,log,,,"CPU master group not set.",1379533714491
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714497
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714507
+error,log,,,"SOPC design not set.",1379533714515
+error,log,,,"CPU module not set.",1379533714523
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379533714530
+error,log,,,"CPU architecture type not set. ",1379533714538
+error,log,,,"CPU master group not set.",1379533714546
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714554
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714561
+error,log,,,"SOPC design not set.",1379533714569
+error,log,,,"CPU module not set.",1379533714577
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379533714586
+error,log,,,"CPU architecture type not set. ",1379533714593
+error,log,,,"CPU master group not set.",1379533714599
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714606
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714613
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714648
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714657
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714764
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714773
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714881
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533714888

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"CPU master group not set.",1379533719694
+error,log,,,"Expected base address of system ID component is undefined.",1379533719702
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533719709
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533719718
+error,log,,,"SOPC design not set.",1379533723595
+error,log,,,"CPU module not set.",1379533723602
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379533723611
+error,log,,,"CPU architecture type not set. ",1379533723618
+error,log,,,"CPU master group not set.",1379533723625
+error,log,,,"Expected base address of system ID component is undefined.",1379533723633
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533723640
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533723647
+error,log,,,"SOPC design not set.",1379533723654
+error,log,,,"CPU module not set.",1379533723662
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379533723669
+error,log,,,"CPU architecture type not set. ",1379533723676
+error,log,,,"CPU master group not set.",1379533723683
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533723690
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533723697
+error,log,,,"SOPC design not set.",1379533723704
+error,log,,,"CPU module not set.",1379533723711
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379533723718
+error,log,,,"CPU architecture type not set. ",1379533723725
+error,log,,,"CPU master group not set.",1379533723732
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379533723739

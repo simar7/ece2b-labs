@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.findReplace",1379533255677
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533260158
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1379533262467
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1379533279688
+opened,view,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.views.SearchView",1379533286719
+activated,view,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.views.SearchView",1379533286734
+executed,command,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.performTextSearchProject",1379533286812
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533287108
+error,log,,,"Problems encountered during text search.",1379533288376
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533298130
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1379533300013
+closed,view,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.views.SearchView",1379533300017
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533303926
+opened,view,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.views.SearchView",1379533312632
+activated,view,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.views.SearchView",1379533312644
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533312720
+executed,command,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.openSearchDialog",1379533312741
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533327723
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533333660
+executed,command,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.openSearchDialog",1379533333677
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533333939
+error,log,,,"Problems encountered during text search.",1379533335236
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379533358525
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1379533359542
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1379533367850
