@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1379617237453
+java.vm.specification.version,sysinfo,,,"1.0",1379617237453
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1379617237453
+java.vm.version,sysinfo,,,"14.0-b16",1379617237453
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1379617239266
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1379617251428
+started,bundle,com.altera.sbtgui.core,10.1.0.153,"com.altera.sbtgui.core",1379617251493
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617255235
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617257616
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617263258
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617265519
+executed,command,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.project.buildProject",1379617268685
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617268974
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617281882
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1379617306571
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617313504
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617364837
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1379617365786
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617431843
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617691670
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617702118
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379617729340
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1379617729350
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1379617736043
+executed,command,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.edit.opendecl",1379617744983

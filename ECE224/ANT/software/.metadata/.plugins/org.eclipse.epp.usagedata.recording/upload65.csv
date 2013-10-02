@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"No ELF file path has been selected.",1379615951705
+error,log,,,"No ELF file path has been selected.",1379615951707
+error,log,,,"Expected base address of system ID component is undefined.",1379615951707
+error,log,,,"No ELF file path has been selected.",1379615951727
+error,log,,,"No ELF file path has been selected.",1379615951729
+error,log,,,"Expected base address of system ID component is undefined.",1379615951729
+error,log,,,"No ELF file path has been selected.",1379615951749
+error,log,,,"No ELF file path has been selected.",1379615951751
+error,log,,,"Expected base address of system ID component is undefined.",1379615951751
+error,log,,,"No ELF file path has been selected.",1379615951771
+error,log,,,"No ELF file path has been selected.",1379615951772
+error,log,,,"Expected base address of system ID component is undefined.",1379615951773
+error,log,,,"No ELF file path has been selected.",1379615951794
+error,log,,,"No ELF file path has been selected.",1379615951796
+error,log,,,"Expected base address of system ID component is undefined.",1379615951796
+error,log,,,"No ELF file path has been selected.",1379615951816
+error,log,,,"No ELF file path has been selected.",1379615952131
+error,log,,,"Expected base address of system ID component is undefined.",1379615952132
+error,log,,,"No ELF file path has been selected.",1379615957419
+error,log,,,"Expected base address of system ID component is undefined.",1379615957419
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615958890
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.OpenRunConfigurations",1379615958913
+error,log,,,"No ELF file path has been selected.",1379615963373
+error,log,,,"Expected base address of system ID component is undefined.",1379615963375
+error,log,,,"No ELF file path has been selected.",1379615963397

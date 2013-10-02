@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615568923
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615568933
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615568934
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615569146
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615569146
+error,log,,,"SOPC design not set.",1379615570469
+error,log,,,"CPU module not set.",1379615570469
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615570469
+error,log,,,"CPU architecture type not set. ",1379615570469
+error,log,,,"CPU master group not set.",1379615570470
+error,log,,,"Connected system ID hash not found on target at expected base address.",1379615570470
+error,log,,,"Connected system timestamp not found on target at expected base address.",1379615570470
+error,log,,,"SOPC design not set.",1379615570478
+error,log,,,"CPU module not set.",1379615570478
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615570479
+error,log,,,"CPU architecture type not set. ",1379615570479
+error,log,,,"CPU master group not set.",1379615570479
+error,log,,,"SOPC design not set.",1379615570481
+error,log,,,"CPU module not set.",1379615570482
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615570482
+error,log,,,"CPU architecture type not set. ",1379615570482
+error,log,,,"CPU master group not set.",1379615570482
+error,log,,,"SOPC design not set.",1379615570484
+error,log,,,"CPU module not set.",1379615570485
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615570485

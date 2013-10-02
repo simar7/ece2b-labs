@@ -1,0 +1,56 @@
+/*
+ * lab1_phase1.c
+ *
+ *  Created on: 2013-09-19
+ *      Author: s244sing
+ */
+
+#include "system.h"
+#include "sys/alt_irq.h"
+#include "sys/alt_sys_init.h"
+
+static void button_ISR(void* context, alt_u32 id)
+{
+	alt_u8 buttons;
+
+	/* get value from edge capture register and mask off all bits except
+	the 4 least significant */
+	buttons = IORD(BUTTON_PIO_BASE, 3) & 0xf;
+
+	/* any bits that are set in the edge capture register are used to toggle
+	the LED state */
+	led_state = led_state ^ buttons;
+
+	/* write current state to LED PIO */
+	IOWR(LED_PIO_BASE, 0, led_state);
+
+	/* reset edge capture register to clear interrupt */
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+}
+
+/*	Method for polling the buttons.
+
+void get_button_push(int button)
+{
+	alt_u8 mask; // mask that will be used to select desired bit
+
+	// set up the mask based on the desired button, 0-3
+	mask = 0x1;
+	mask = mask << button;
+
+	// wait for the desired button to be pushed
+	while( (IORD(BUTTON_PIO_BASE, 0) & mask) != 0);
+
+	printf("You pushed button %d\n",button);
+
+	// wait for the desired button to be released
+	while( (IORD(BUTTON_PIO_BASE, 0) & mask) == 0);
+
+}
+*/
+
+int main(int argc, char* argv[])
+{
+	get_button_push(0);
+	return 0;
+}

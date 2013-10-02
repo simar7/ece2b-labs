@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615079123
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615085096
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615085096
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615090631
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615090632
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615097930
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615097931
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615099924
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1379615104340
+error,log,,,"SOPC design not set.",1379615105423
+error,log,,,"CPU module not set.",1379615105424
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615105424
+error,log,,,"CPU architecture type not set. ",1379615105424
+error,log,,,"CPU master group not set.",1379615105424
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615105425
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615105425
+error,log,,,"SOPC design not set.",1379615105425
+error,log,,,"CPU module not set.",1379615105426
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1379615105426
+error,log,,,"CPU architecture type not set. ",1379615105426
+error,log,,,"CPU master group not set.",1379615105426
+error,log,,,"Expected base address of system ID component is undefined.",1379615105427
+error,log,,,"No Nios II target connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615105427
+error,log,,,"No Nios II byte stream devices connection paths were located. Check connections and that a Nios II .sof is downloaded.",1379615105427
+error,log,,,"SOPC design not set.",1379615105427
