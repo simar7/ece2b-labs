@@ -14,7 +14,7 @@ __task void task1()
 	
 	for (;; i++)
 	{
-		printf("Task1: %d\n", i);
+		printf("Task1: Printing counter =  %d\n", i);
 		os_dly_wait(10);
 	}
 }
@@ -24,7 +24,7 @@ __task void task2()
 	while(1)
 	{
 		printf("Task2: HelloWorld!\n");
-		os_dly_wait(3);
+		os_dly_wait(10);
 	}
 }
 
@@ -33,7 +33,7 @@ __task void task3()
 	while(1)
 	{
 		printf("Task3: Printing Task 3!\n");
-		os_dly_wait(3);
+		os_dly_wait(10;
 	}
 }
 
@@ -42,21 +42,20 @@ __task void task4()
 	while(1)
 	{
 		printf("Task4: Printing Task 4!\n");
-		os_dly_wait(3);
+		os_dly_wait(10);
 	}
 }
 
 
 __task void getActiveTasks()
 {
-	// U32 tsk1;
-	// tsk1 = os_tsk_self();
-
-	OS_TID returnValue;
-	returnValue = os_tsk_count_get();
-	printf("Number of Active Tasks: %d\n", returnValue);
-	//os_dly_wait(5);
-	
+    while(1)
+    {
+        OS_TID returnValue;
+        returnValue = os_tsk_count_get();
+        printf("Number of Active Tasks: %d\n", returnValue);
+        os_dly_wait(5);
+    }
 }
 
 
@@ -78,6 +77,6 @@ int main()
 {
   SystemInit();							//Init system
   uart0_init();							//Start UART
-	os_sys_init(init);				//Start OS Processes
-	return 0;
+  os_sys_init(init);				//Start OS Processes
+  return 0;
 }
