@@ -1,0 +1,7 @@
+Solutions to Questions for Lab0Brsawhney and s244sing
+
+1. The array holds a list of actively running tasks created by the processor
+
+2. Since idle demon is a task, which is actively running when no other task is running, and is blocked when other tasks are running, it is also an element of the os_active_TCB. In either case the idle task is considered ACTIVE (blocked or running).
+
+3. The index of the task's TCB in the os_active_TCB is task_id - 1. However, task 1 is always init() after which other defined tasks are placed in the TCB based on their creation time. If a task is deleted, the next lower task in the TCB array takes it's position and every other lower position task in the array move up.
