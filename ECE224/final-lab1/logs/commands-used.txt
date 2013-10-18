@@ -1,0 +1,248 @@
+ 7660* ls
+ 7661* cd School
+ 7662* ls
+ 7663* cd StudyTerms
+ 7664* ls
+ 7665* cd ece2b
+ 7666* ls
+ 7667* cd ece2b-labs
+ 7668* ls
+ 7669* cd ECE224
+ 7670* ls
+ 7671* cd final-lab1
+ 7672* ls
+ 7673* head ece224_lab1phase2_results.txt
+ 7674* mv ece224_lab1phase2_results.txt results-phase1.txt
+ 7675* mv results-phase2.txt
+ 7676* mv results-phase1.txt results-phase2.txt
+ 7677* ls
+ 7678* cat results-phase2.txt
+ 7679* more results-phase2.txt
+ 7680  ls
+ 7681  cd School/StudyTerms/ece2b/ece2b-labs/ECE224/final-lab1
+ 7682  ls
+ 7683  grep -A "Results" 
+ 7684  grep -A "Results" ./results-phase2.txt
+ 7685  man grep
+ 7686  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt
+ 7687  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F ' ' 
+ 7688* man awk
+ 7689  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F ' ' { print $2 }
+ 7690  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F ' ' '{ print $2 }'
+ 7691  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F ' ' '{ print $3 }'
+ 7692  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F ' ' '{ print $4 }'
+ 7693  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $4 }'
+ 7694  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $1 }'
+ 7695  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $2 }'
+ 7696  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $2 }' | awk -F ' ' '{ print $1 }'
+ 7697  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $2 }'
+ 7698  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $2 }' | awk -F ' ' '{ print $1 }'
+ 7699* more results-phase2.txt
+ 7700* tail results-phase2.txt
+ 7701* less results-phase2.txt
+ 7702  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $2 }' | awk -F ' ' '{ print $1 }' >> Results-parsed.txt
+ 7703  less Results-p
+ 7704  less Results-parsed.txt
+ 7705  sed '/^$/d' Results-parsed.txt
+ 7706  sed '/^$/d' Results-parsed.txt Results-parsed.txt
+ 7707  ls
+ 7708  less Results-parsed.txt
+ 7709  sed '/^$/d' Results-parsed.txt > Results-parsed.txt
+ 7710  less Results-p
+ 7711  less Results-parsed.txt
+ 7712  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $2 }' | awk -F ' ' '{ print $1 }' >> Results-parsed.txt
+ 7713  mv Results-parsed.txt
+ 7714  rm Results-parsed.txt
+ 7715  grep -A 5 "Results" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $2 }' | awk -F ' ' '{ print $1 }' >> Results-parsed.txt
+ 7716  less Results-parsed.txt
+ 7717  sed '/^$/d' Results-parsed.txt >> new-Results-parsed.txt
+ 7718  less new-Results-parsed.txt
+ 7719* less results-phase2.txt
+ 7720  wc -l new-Results-parsed.txt
+ 7721  sed -n 1p new-Results-parsed.txt
+ 7722  wc -l new-Results-parsed.txt
+ 7723  wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'
+ 7724  LINES = `wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'; echo 'LINES = $LINES'; done\ndone\n`
+ 7725  LINES = `wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; echo 'LINES = $LINES'; done\ndone\n`
+ 7726  LINES = `wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; echo 'LINES = $LINES'; done
+ 7727  LINES = `wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; echo 'LINES = $LINES'
+ 7728  LINES = `wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; echo "LINES = $LINES"
+ 7729  LINES=`wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; echo "LINES = $LINES"
+ 7730  LINES=`wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; for i in `seq 1 $LINES`; echo "$i"; done
+ 7731  LINES=`wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; for i in `seq 1 $LINES`; do echo "$i"; done
+ 7732  LINES=`wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; for i in `seq 1 $LINES`; do sed -n i new-Results-parsed.txt; done
+ 7733  LINES=`wc -l new-Results-parsed.txt | awk -F ' ' '{ print $1 }'`; for i in `seq 1 $LINES`; do sed -n iP new-Results-parsed.txt; done
+ 7734  sed -n '1-4p' new-Results-parsed.txt
+ 7735* man sed
+ 7736  sed -n '1..4p' new-Results-parsed.txt
+ 7737  sed -n '1~4p' new-Results-parsed.txt
+ 7738  sed -n '1\~4p' new-Results-parsed.txt
+ 7739  sed -n '1,${p;n;n;n;}' new-Results-parsed.txt
+ 7740  sed -n '1,${p;n;n;n;}' new-Results-parsed.txt >> missed-pulses-all.txt
+ 7741  less missed-pulses-all.txt
+ 7742* vi results-phase2.txt
+ 7743  vi missed-pulses-all.txt
+ 7744  sed -n '2,${p;n;n;n;}' new-Results-parsed.txt
+ 7745  sed -n '2,${p;n;n;n;}' new-Results-parsed.txt >> maxlatency-all.txt
+ 7746  less maxlatency-all.txt
+ 7747  vi maxlatency-all.txt
+ 7748  sed -n '3,${p;n;n;n;}' new-Results-parsed.txt
+ 7749  sed -n '3,${p;n;n;n;}' new-Results-parsed.txt >> maxlatency-ms-all.txt
+ 7750  vi maxlatency-ms-all.txt
+ 7751  sed -n '4,${p;n;n;n;}' new-Results-parsed.txt
+ 7752  sed -n '4,${p;n;n;n;}' new-Results-parsed.txt >> units-processed-all.txt
+ 7753  vi units-processed-all.txt
+ 7754  ls
+ 7755  mkdir logs
+ 7756  ls
+ 7757  grep -A 5 "Test Specifications:" ./results-phase2.txt results-phase2.txt | awk -F '='  '{ print $2 }' | awk -F ' ' '{ print $1 }'
+ 7758  grep -A 5 "Test Specifications:" ./results-phase2.txt
+ 7759  grep -A 5 "Test\ Specifications:" ./results-phase2.txt
+ 7760  less ./results-p
+ 7761  less ./results-phase2.txt
+ 7762  grep -A 5 "Exiting..." ./results-phase2.txt
+ 7763  grep -A 7 "Exiting..." ./results-phase2.txt
+ 7764  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F '=' '{ print $1 }'
+ 7765  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F '=' '{ print $2 }'
+ 7766  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F '=' '{ print $1 }' | awk -F ' ' '{ print $1 }'
+ 7767  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F '=' '{ print $1 }' 
+ 7768  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F '=' '{ print $2 }' 
+ 7769  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F '=' '{ print $2 }' | awk -F ' ' '{ print $1 }'
+ 7770  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F '=' '{ print $2 }' | awk -F ' ' '{ print $1 }' >>  test-params-actual-all.txt
+ 7771  less test-params-actual-all.txt
+ 7772  vi test-params-actual-all.txt
+ 7773  sed '/^$/d' test-params-actual-all.txt
+ 7774  sed '/^$/d' test-params-actual-all.txt >> test-params-actual-all-stripped.txt
+ 7775  less test-params-actual-all-stripped.txt
+ 7776  sed -n '1,${p;n;n;}' test-params-actual-all-stripped.txt >> actual-period-all.txt
+ 7777  less actual-period-all.txt
+ 7778  sed -n '2,${p;n;n;}' test-params-actual-all-stripped.txt >> actual-dutycycle-all.txt
+ 7779  less actual-dutycycle-all.txt
+ 7780  sed -n '3,${p;n;n;}' test-params-actual-all-stripped.txt >> actual-latencyres-all.txt
+ 7781  less actual-latencyres-all.txt
+ 7782  vi actual-period-all.txt
+ 7783  vi actual-dutycycle-all.txt
+ 7784  vi actual-period-all.txt
+ 7785  vi actual-latencyres-all.txt
+ 7786  ls
+ 7787  mv actual-* logs
+ 7788  mv *all logs
+ 7789  mv *all* logs
+ 7790  ls
+ 7791  cd logs
+ 7792  ls
+ 7793  cd ..
+ 7794  ls
+ 7795  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F '=' '{ print $2 }' | awk -F ' ' '{ print $1 }'
+ 7796  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 }' | awk -F ' ' '{ print $1 }'
+ 7797  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 }' 
+ 7798  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $1 }' 
+ 7799  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 }' 
+ 7800  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3}' 
+ 7801  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' 
+ 7802  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' | awk -F ' ' '{ print $1 }'
+ 7803  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' | awk -F ' ' '{ print $1 }' >> given-periods-all.txt
+ 7804  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' | awk -F ' ' '{ print $2 }' >> given-dutycycle-all.txt
+ 7805  less given-dutycycle-all.txt
+ 7806  rm given-dutycycle-all.txt
+ 7807  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' | awk -F ' ' '{ print $1 }'
+ 7808  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' | awk -F ' ' '{ print $2 }'
+ 7809  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' | awk -F ' ' '{ print $3 }'
+ 7810  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' 
+ 7811  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' | awk -F ' ' '{ print $3 }' >> given-dutycycle-all.txt
+ 7812  grep -A 7 "Exiting..." ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' | awk -F ' ' '{ print $5 }' >> given-gran-all.txt
+ 7813  less given-gran-all.txt
+ 7814  ls
+ 7815  sed '/^$/d' given-dutycycle-all.txt >> given-dutycycle-all-stripped.txt
+ 7816  less given-dutycycle-all-stripped.txt 
+ 7817  sed '/^$/d' given-periods-all.txt >> given-periods-all-stripped.txt
+ 7818  sed '/^$/d' given-gran-all.txt >> given-gran-all-stripped.txt
+ 7819  vi given-periods-all-stripped.txt
+ 7820  vi given-dutycycle-all
+ 7821  vi given-dutycycle-all-stripped.txt
+ 7822  sed '/^$/d' given-periods-all.txt >> given-periods-all-stripped.txt
+ 7823  rm given-periods-all-stripped.txt
+ 7824  sed '/^$/d' given-periods-all.txt >> given-periods-all-stripped.txt
+ 7825  vi given-periods-all-stripped.txt
+ 7826  vi given-dutycycle-all-stripped.txt
+ 7827  grep -A 7 "POLLING" ./results-phase2.txt | awk -F ':' '{ print $2 $3 $4}' 
+ 7828  grep  "POLLING" ./results-phase2.txt
+ 7829  grep  "PERIOD"  ./results-phase2.txt
+ 7830  grep  "PERIOD"  ./results-phase2.txt >> all-given-input-params.txt
+ 7831  ls
+ 7832  mv *params* logs
+ 7833  ls
+ 7834  mv given* logs
+ 7835  ls
+ 7836  cd logs
+ 7837  ls
+ 7838  pbcopy < all-given-input-params.txt
+ 7839  xclipboard -sel clip all-given-input-params.txt
+ 7840  man xclipboard
+ 7841  cat all-given-input-params.txt | xclip -sel clip
+ 7842  cat all-given-input-params.txt | xclipboard -sel clip
+ 7843* ls
+ 7844* cd ~/Development
+ 7845* ls
+ 7846* cd ..
+ 7847* ls
+ 7848* cd School
+ 7849* ls
+ 7850* cd StudyTerms
+ 7851* ls
+ 7852* cd ece2b
+ 7853* ls
+ 7854* cd ece2b-labs
+ 7855* ls
+ 7856* cd ECE224
+ 7857* ls
+ 7858* cd final-lab1
+ 7859* ls
+ 7860* cd logs
+ 7861* ls
+ 7862* cat all-given-input-params.txt | xclipboard -sel clip
+ 7863* open all-given-input-params.txt
+ 7864* open missed-pulses-all.txt
+ 7865* open maxlatency-all.txt
+ 7866* open maxlatency-ms-all.txt
+ 7867* open units-processed-all.txt
+ 7868* open actual-period-all.txt
+ 7869* open actual-dutycycle-all.txt
+ 7870* open actual-latencyres-all.txt
+ 7871* ls
+ 7872* cd ..
+ 7873* ls
+ 7874* cd ..
+ 7875* ls
+ 7876* cd ..
+ 7877* ls
+ 7878* cd ECE224/final-lab1
+ 7879* ls
+ 7880* cd logs
+ 7881* ls
+ 7882* ls -lrt
+ 7883* cd ..
+ 7884* ls
+ 7885* cd ..
+ 7886* ls
+ 7887* cd ..
+ 7888* ls
+ 7889* cd ..
+ 7890* ls
+ 7891* cd ece2b-labs
+ 7892* ls
+ 7893* git status
+ 7894* git add .
+ 7895* git status
+ 7896* git commit -s -m 'Tons of new stuff all around'
+ 7897* git push
+ 7898* ls
+ 7899* cd ECE224/ls
+ 7900* cd ECE224
+ 7901* ls
+ 7902* cd final-lab1
+ 7903* ls
+ 7904* cd logs
+ 7905* ls
+ 7906* open parsed-logs.xlsx
+ 7907  history
