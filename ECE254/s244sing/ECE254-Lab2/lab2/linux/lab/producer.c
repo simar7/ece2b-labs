@@ -6,6 +6,7 @@
 #include <errno.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <sys/stat.h>
 
 // Global Variables
 struct timeval time_a, time_b, time_c;
@@ -13,7 +14,7 @@ struct timeval time_a, time_b, time_c;
 int producer( int N, int B )
 {
 	mqd_t qdes;
-	int qname[] = "/dev/mqueue/mailbox_s244sing_lab2_producer";
+	char qname[] = "/dev/mqueue/mailbox_s244sing_lab2_producer";
 	mode_t mode = S_IRUSR | S_IWUSR;
 	int qdes_mode = O_RDWR | O_CREAT;
 	struct mq_attr attr;
@@ -30,7 +31,7 @@ int producer( int N, int B )
 	}
 
 	pid_t child_pid;
-	child_pid = fork(void);
+	child_pid = fork();
 	if( child_pid == -1 )
 	{
 		printf("[producer]: child fork() failed!\t ERRNO: %d\n", errno);
@@ -89,7 +90,7 @@ int producer( int N, int B )
 int main( int argc, char* argv[] )
 {
 	int return_val = 0;
-	return_val = producer( argv[1], argv[2] );
+	return_val = producer( (int) argv[1], (int) argv[2] );
 
 	if( return_val != 0 )
 	{
