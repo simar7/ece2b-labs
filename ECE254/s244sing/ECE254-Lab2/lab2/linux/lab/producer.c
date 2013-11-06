@@ -14,7 +14,7 @@ struct timeval time_a, time_b, time_c;
 int producer( int N, int B )
 {
 	mqd_t qdes;
-	char qname[] = "/dev/mqueue/mailbox_s244sing_lab2_producer";
+	char qname[] = "/mailbox_s244sing_lab2_producer";
 	mode_t mode = S_IRUSR | S_IWUSR;
 	int qdes_mode = O_RDWR | O_CREAT;
 	struct mq_attr attr;
@@ -38,7 +38,7 @@ int producer( int N, int B )
 		exit(1);
 	}
 	
-	qdes = mq_open( qname, qdes_mode, mode, &attr );
+	qdes = mq_open( qname, O_RDWR | O_CREAT , mode, &attr );
 	if( qdes == -1 )
 	{
 		printf("[producer]: mq_open() failed!\t ERRNO: %d\n", errno);
