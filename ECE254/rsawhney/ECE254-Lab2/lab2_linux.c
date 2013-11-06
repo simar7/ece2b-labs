@@ -8,6 +8,9 @@
 #include <sys/wait.h>
 
 struct timeval t_a, t_b, t_c;
+double ta;
+double tb;
+double tc;
 
 void producer (int N, const int B)
 {
@@ -26,7 +29,8 @@ void producer (int N, const int B)
 	attr.mq_flags   = 0;	// blocking queue 
 
 	//GET TIME A
-    gettimeofday(&t_a, NULL);
+	gettimeofday(&t_a, NULL);
+	ta = t_a.tv_sec + t_a.tv_usec/1000000.0;
 
 	pid_t child_pid;
 	child_pid = fork();
@@ -52,7 +56,8 @@ void producer (int N, const int B)
         int i = 0;
         
         gettimeofday(&t_b, NULL);
-        printf("Initialization Time = %d microseconds\n",((int)t_b.tv_usec - (int)t_a.tv_usec));
+	    tb = t_b.tv_sec + t_b.tv_usec/1000000.0;
+        printf("Initialization Time = %.6lf seconds\n", (tb - ta));
 
 	    while (i < N)
 	    {
@@ -71,7 +76,8 @@ void producer (int N, const int B)
 
 	    // GET TIME C
         gettimeofday(&t_c, NULL);
-        printf("Transmission Time = %d microseconds\n",((int)t_c.tv_usec - (int)t_b.tv_usec));
+	    tc = t_c.tv_sec + t_c.tv_usec/1000000.0;
+        printf("Transmission Time = %.6lf seconds\n",tc - tb);
 
         if (mq_close(qdes) == -1) {
 	        perror("PRODUCER - mq_close() failed");
