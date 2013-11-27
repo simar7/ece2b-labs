@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
   ta = t_a.tv_sec + t_a.tv_usec/1000000.0;
   //Spawn Produer Threads
   for(i = 0; i < P; i++)
-  {      
+  {     
       if (pthread_create(&prod_thread[i],NULL,producer,(void *)(intptr_t)i) != 0)
       {
 	  printf ("Unable to create producer thread\n");
